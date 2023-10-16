@@ -1,0 +1,185 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* The title */
+.about__title {
+    font-size: var(--size-2xl);
+    color: var(--color-light);
+}
+
+/* The PAragraphs */
+.about__description {
+    max-width: 60ch;
+    font-size: var(--size-small);
+    color: var(--color-slate600);
+}
+/* The Line */
+.about__hr {
+    border-color: var(--color-slate800);
+}
+
+/* The SkillSet */
+.about__subtitle {
+    font-size: var(--size-small);
+    color: var(--color-slate400);
+}
+.about__ul-container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.about__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: '\2714';
+    padding-left: 1em;
+    flex: 1;
+}
+.about__list {
+    font-size: var(--size-small);
+    color: var(--color-slate600);
+}
+/* This line adds a bit margin-left bw the check symbol and the text */
+.about__list::before {
+    content: '';
+    margin-left: 0.5em;
+    border: 1px solid var(--color-rose);
+}
+
+/* Stylings for ScreenSizes */
+
+/* extraSmall screen */
+@media (min-width: 475px) {
+    .about {
+        gap: 1.5rem;
+    }
+    
+    .about__contents {
+        gap: 1.5rem;
+    }
+    
+    /* The title */
+    .about__title {
+        font-size: var(--size-2xl);
+    }
+    
+    /* The PAragraphs */
+    .about__description {
+        font-size: var(--size-small);
+        
+    }
+
+    /* The SkillSet */
+    .about__subtitle {
+        font-size: var(--size-base);
+     
+    }
+
+    .about__list {
+        font-size: var(--size-small);
+        
+    }
+
+}
+
+
+/* Small screen */
+ @media (min-width: 640px) {
+    .about__image-wrapper {
+        /* margin: 0 auto; */
+        border: 5px solid var(--color-slate600);
+        border-radius: 5%;
+        width: 28.7rem;
+    }
+    
+    .about__image {
+        width: 28.6875rem;
+        border-radius: 6%;
+        border: 3px solid var(--color-slate800);
+    }
+    
+ }
+ 
+
+/* medium screen */
+/* @media (min-width: 768px) {} */
+
+/* large screen */
+@media (min-width: 1024px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* The title */
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+    
+    /* The PAragraphs */
+    .about__description {
+        font-size: var(--size-large);
+        
+    }
+
+    /* The SkillSet */
+    .about__subtitle {
+        font-size: var(--size-2xl);
+     
+    }
+
+    .about__list {
+        font-size: var(--size-large);
+        
+    }
+
+}
+
+
+/* extraLarge screen */
+@media (min-width: 1280px) {
+    .about__contents {
+        gap: 2rem;
+    }  
+    
+    
+    /* The title */
+      .about__title {
+        font-size: var(--size-5xl);
+    }
+    
+    /* The PAragraphs */
+    .about__description {
+        font-size: var(--size-xl);
+        
+    }
+
+    /* The SkillSet */
+    .about__subtitle {
+        font-size: var(--size-2xl);
+     
+    }
+
+    .about__list {
+        font-size: var(--size-xl);
+        
+    }
+    
+    .about__image {
+        width: 30.75rem;
+    }
+}
+
+/* 2extraLarge screen */
+/* @media (min-width: 1536px) {} */

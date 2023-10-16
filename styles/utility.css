@@ -1,0 +1,112 @@
+                /* using the mobile first style architecture */
+/* extraSmall screen */
+/* @media (min-width: 475px) {} */
+
+
+/* Small screen */
+ /* @media (min-width: 640px) {} */
+ 
+
+/* medium screen */
+/* @media (min-width: 768px) {} */
+
+/* large screen */
+/* @media (min-width: 1024px) {} */
+
+
+/* extraLarge screen */
+/* @media (min-width: 1280px) {} */
+
+/* 2extraLarge screen */
+/* @media (min-width: 1536px) {} */
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05m;
+    background-color: var(--color-rose);
+    color: #f4f4f5;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5), 0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px var(--color-rose);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translate(-3px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25), 0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(--color-rose);
+}
+
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0.5rem;
+    padding-right: 0.5rem;
+ 
+}
+
+.section{
+    margin-top: 5rem;
+}
+
+/* This will add a blur to the images when they enter the viewport */
+.loading {
+    filter: blur(40px) grayscale(100%);
+}
+/* This resets the blur */
+.loaded {
+    filter: blur(0) grayscale(0);
+    transition: 0.8s ease-in-out;
+}
+
+
+/* using the mobile first style architecture */
+
+/* extraSmall screen */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/* Small screen */
+ @media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+ }
+
+/* medium screen */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* large screen */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        /* width: 97%; */
+    }
+}
+
+/* extraLarge screen */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1028px;    
+    }
+}
+
+/* 2extraLarge screen */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+        margin-left: calc((100% - 1536px) / 2);
+        margin-right: calc((100% - 1536px) / 2);
+    }
+}
+

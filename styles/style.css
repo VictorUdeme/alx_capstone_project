@@ -1,0 +1,93 @@
+:root {
+    --color-dark: #0f172a;
+    --color-light: #f4f4f5;
+    --color-slate400: #94a3b8;
+    --color-slate600: #475569;
+    --color-slate800: #27272a;
+    --color-indigo: #4f46e5;
+    --color-rose: #e11d48;
+
+    /* rose rgb(225, 29, 72) */
+    /* indigo 	rgb(79, 70, 229) */
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-small: 0.875rem;
+    --size-base: 1rem;
+    --size-large: 1.125rem;
+    --size-xl: 1.125rem;
+    --size-2xl: 1.5rem;  
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* A utility class that references the light mode*/
+/* Here, to make things easier, i swapped the --color-light var name to --colordark and vise versa 
+then used the color value of -color-slate-800 for slate 400 and 600*/
+.light-mode {
+    --color-light: #0f172a;
+    --color-dark: #f4f4f5;
+    --color-slate400: #27272a;
+    --color-slate600: #27272a;
+    --color-slate800: #27272a;
+}
+
+
+body {
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+img, picture, video,canvas,svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a {
+    color: var(--color-rose);
+}
+
+strong {
+    color: var(--color-indigo);
+}
+
+/* The scrollbar */  
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--color-rose);
+    outline: 1px solid var(--color-rose);
+    border-radius: 5px;
+  }
