@@ -48,8 +48,8 @@ Features and Functionality:
 
 
   
-![The Flowchart](images/flowChart_for_my_project.png)  
-![My Personal Web portfolio prototype](images/prototype.png)
+![The Flowchart](flowChart_for_my_project.png)  
+![My Personal Web portfolio prototype](prototype.png)
 
 RoadMaps and Future Enhancements:
     > I'll add a blog section where i can regularly share tutorials and updates related to web/mobile   development and design.
