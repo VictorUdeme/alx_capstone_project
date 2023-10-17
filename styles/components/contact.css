@@ -23,30 +23,96 @@
     font-size: var(--size-small);
 }
 
+/* The Form */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+    width: 50%;
+    background-color: transparent;
+    box-shadow: 0 2px 9px rgba(215, 167, 179, 0.5), 0 0 15px var(--color-dark);
+    color: var(--color-indigo);
+    padding: .5rem;
+    margin-bottom: 0.625rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.contact__form textarea {
+    resize: vertical;
+    margin-left: 99px;
+
+}
+
+.contact__form input[type="submit"] {
+    background-color: transparent;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: var(--color-rose);
+    padding: 0.8rem 20px;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    top: 3rem;
+    right: 11.9rem;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: var(--size-base);
+    border: 2px solid rgb(243, 233, 233);
+}
+
+
+.contact__form input[type="submit"]:hover {
+    color: var(--color-light);
+    background-color: var(--color-rose);
+    border: none;
+}
+
 /* EXtraSmall Screens */
 @media (min-width: 475px) {
     .contact {
-       gap: 1.5rem;
+        gap: 1.5rem;
     }
-    
+
     .contact__title {
         font-size: var(--size-3xl);
 
     }
-    
+
     .contact__description {
         font-size: var(--size-base);
     }
-    
+
     .contact__btn {
         font-size: var(--size-base);
     }
+
+    .contact__form input[type="submit"] {
+        padding: 0.4rem 10px;
+     
+    }
+
+    .contact__form textarea {
+        resize: vertical;
+        margin-left: 80px;
+
+    }
+
 }
 
 
 /* Small screen */
- /* @media (min-width: 640px) {} */
- 
+/* @media (min-width: 640px) {} */
+
 
 /* medium screen */
 /* @media (min-width: 768px) {} */
@@ -58,11 +124,11 @@
         font-size: var(--size-4xl);
 
     }
-    
+
     .contact__description {
         font-size: var(--size-large);
     }
-    
+
     .contact__btn {
         font-size: var(--size-large);
     }
@@ -71,19 +137,19 @@
 
 /* extraLarge screen */
 @media (min-width: 1280px) {
-        .contact {
-       gap: 2rem;
+    .contact {
+        gap: 2rem;
     }
-    
+
     .contact__title {
         font-size: var(--size-5xl);
 
     }
-    
+
     .contact__description {
         font-size: var(--size-xl);
     }
-    
+
     .contact__btn {
         font-size: var(--size-base);
     }
