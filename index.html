@@ -290,11 +290,22 @@
       <p class="contact__description">If you need a skilled web developer, have questions about my work, or simply want
         to connect, please don't hesitate to contact me. I'm always happy to hear from you and will respond as soon as
         possible.</p>
-      <a class="contact__btn btn" href="mailto:snazzydo9@gmail.com" target="_blank">Reach Me</a>
+        <a class="contact__btn btn" href="mailto:snazzydo9@gmail.com" target="_blank">Reach Me</a><br><br>
+
+        <div class="contact__form">
+          <p class="contact__description">You can also fill this form to get through to me</p><br>
+          <form action="https://formspree.io/f/mknlkeop" method="POST">
+            <input type="text" name="name" placeholder="Username:" required>
+            <input type="email" name="email" placeholder="Email:" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave your message here:"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
     </section>
     <!-- End of The Contact Section -->
   </main>
 
+  
   <!-- The Footer Section -->
   <footer class="footer container section">
     <a href="#home" class="header__link image">
