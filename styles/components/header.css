@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     /* to make the bars show for the mobile nav*/
     position: relative;
     z-index: 900;
@@ -17,7 +17,7 @@
     font-size: var(--size-4xl);
     color: var(--color-slate400);
     cursor: pointer;
-    padding: 1rem;
+    /* padding: 0.5rem; */
     margin-left: 2rem;
 }
 span {
