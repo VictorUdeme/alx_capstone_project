@@ -23,7 +23,7 @@
     position: relative;
 }
 
-.work__image-wrapper::after {
+.work__image-wrapper::after { /* This creates an overlay for the images */
     content: '';
     background-color: rgba(79, 70, 229, 0.4);
     width: 100%;
@@ -39,7 +39,7 @@
     background-color: rgba(79, 70, 229, 0.3);
 }
 
-.work__project:not(:last-child) {
+.work__project:not(:last-child) { /* This adds margin to all but the last element */
     margin-bottom: 5rem;
 }
 
